@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Smoothie Machine</h1>
+        <div class="image-gallery">
+            <img src="first.jpeg" alt="Smoothie 1" class="smoothie-image">
+            <img src="second.jpeg" alt="Smoothie 2" class="smoothie-image">
+            <img src="third.webp" alt="Smoothie 3" class="smoothie-image">
+            <img src="forth.jpg" alt="Smoothie 4" class="smoothie-image">
+        </div>
+    </header>
+
+    <main>
+        <form id="smoothieForm">
+            <fieldset>
+                <legend>Order Your Smoothie</legend>
+
+                <!-- Size Options -->
+                <label for="size">Choose Size:</label>
+                <select id="size" required>
+                    <option value="">Select a size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                
+                <!-- Ingredient Checklist -->
+                <label>Ingredients:</label>
+                <div class="ingredients">
+                    <input type="checkbox" id="strawberry" name="ingredient" value="Strawberry">
+                    <label for="strawberry">Strawberry</label>
+                    
+                    <input type="checkbox" id="banana" name="ingredient" value="Banana">
+                    <label for="banana">Banana</label>
+
+                    <input type="checkbox" id="mango" name="ingredient" value="Mango">
+                    <label for="mango">Mango</label>
+
+                    <input type="checkbox" id="blueberry" name="ingredient" value="Blueberry">
+                    <label for="blueberry">Blueberry</label>
+
+                    <input type="checkbox" id="spinach" name="ingredient" value="Spinach">
+                    <label for="spinach">Spinach</label>
+
+                    <input type="checkbox" id="kale" name="ingredient" value="Kale">
+                    <label for="kale">Kale</label>
+
+                    <input type="checkbox" id="almondMilk" name="ingredient" value="Almond Milk">
+                    <label for="almondMilk">Almond Milk</label>
+                </div>
+                
+
+                <button type="submit" id="orderButton">Order Smoothie</button>
+            </fieldset>
+        </form>
+
+        <div id="smoothieDescription"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

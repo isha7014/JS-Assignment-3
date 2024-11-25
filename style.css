@@ -1,0 +1,110 @@
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7bae1;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #f765bf; /* Tomato color */
+    color: white;
+    border-bottom: 4px solid #d988c7; /* Orange accent */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.smoothie-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.smoothie-image:hover {
+    transform: scale(1.1);
+}
+
+/* Form Styling */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 1.8em;
+    color: #d05ec5;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select,
+button {
+    padding: 12px;
+    font-size: 1.1em;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid #db34d0;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #db34d8; /* Blue color for button */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e77bd5; /* Darker blue on hover */
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.ingredients input {
+    margin-right: 10px;
+}
+
+#smoothieDescription {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 30px;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
